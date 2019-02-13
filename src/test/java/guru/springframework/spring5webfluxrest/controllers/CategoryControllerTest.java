@@ -70,7 +70,7 @@ public class CategoryControllerTest {
     }
 
     @Test
-    public void update() {
+    public void testUpdateCategory() {
         BDDMockito.given(categoryRepository.save(any(Category.class)))
                 .willReturn(Mono.just(Category.builder().build()));
 
